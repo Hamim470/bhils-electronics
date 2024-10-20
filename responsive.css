@@ -27,4 +27,36 @@
         
     }
     
+
+    .banner{
+        flex-direction:column;
+        width:100%;
+        gap:30px;
+    }
+    .banner-img{
+        order:0;
+        width:100%;
+
+    }
+    .banner-text{
+        order:1;
+        text-align:center;
+        width:100%;
+
+    }
+    .banner-text h1{
+        text-align: center;
+        width:100%;
+        font-size:1.8em;
+    }
+    .banner-text p{
+        width:100%;
+        margin:15px auto;
+    }
+    .sponsor-container{
+        gap:.8em;
+    }
+    .sponsor-container img{
+        width:3.5em;
+    }
 }

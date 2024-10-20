@@ -5,7 +5,7 @@
     font-family: "Poppins", sans-serif;
 }
 :root{
-    --primary-color:rgb(0, 183, 255);
+    --primary-color:rgb(157, 223, 249);
     --secondary-color:rgb(92, 92, 92);
 }
 
@@ -16,7 +16,7 @@ header{
     margin:0 auto;
 }
 
-/* nav style */
+/* nav style starts*/
 nav{
     display:flex;
     justify-content:space-between;
@@ -24,14 +24,16 @@ nav{
     align-items:center;
 }
 nav span{
-    color:var(--primary-color);
+    color:rgb(54, 198, 255);
     font-weight: 900;
     font-family: "Dancing Script", cursive;
+    font-size:1.5em;
 }
 nav h1{
     color:var(--secondary-color);
     font-size:2rem;
-    
+    text-align:center;
+    margin-bottom:30px;
 }
 .nav-menu ul{
     display:flex;
@@ -44,6 +46,13 @@ nav h1{
 .nav-menu a{
     text-decoration:none;
     color:var(--secondary-color);
+    font-size:1.5em;
+}
+.nav-menu a:hover{
+    color:var(--primary-color);
+    font-weight:900;
+    transition:font-weight .5s ease-in .01s;
+    
 }
 .menu-toggle{
     display:none;
@@ -54,7 +63,127 @@ nav h1{
     font-size:2rem;
     cursor:pointer;
 }
+/* nav style ends */
 
+
+/* banner section starts */
+.banner{
+    display:flex;
+    gap:11.3%;
+    align-items:center;
+    margin-top:50px;
+    margin-bottom:50px;
+    height:max-content;
+}
+
+.banner-text h1{
+    width:80%;
+    font-size:3em;
+
+}
+.banner-text p{
+    width:83%;
+}
+.banner-text button{
+    color:var(--secondary-color);
+    background-color:var(--primary-color);
+    border:none;
+    border-radius:30px;
+    padding:10px 24px 10px 24px;
+    width:max-content;
+    font-weight:900;
+}
+.banner-text button:hover{
+    transform:scale(1.3);
+    transition:transform .5s linear;
+}
+.banner-img img{
+    width:100%;;
+    display:flex;
+    margin:auto auto;
+}
+.banner-img{
+    background-image:url('images/Circle\ design.svg');
+    width:45.6%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:flex;
+    background-position:center;
+}
+
+/* banner section ends */
+
+
+/* sponsors section starts */
+.sponsor{
+    margin-top:30px;
+    margin-bottom:60px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.sponsor-container{
+    display:flex;
+    gap:60px;
+    justify-content:center;
+    flex-wrap:wrap;
+    object-fit:cover;
+}
+
+.gradient-line{
+    background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+    height:2px;
+    margin:30px auto;
+    
+}
+/* sponsors section ends */
 
 
 /* header style ends */
+
+
+
+
+
+/* main starts */
+
+/* collection section starts */
+
+.collection-section{
+    margin:5% 8%;
+}
+.collection-section>h1{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2em;
+    color:var(--secondary-color);
+}
+.collection-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+.collection{
+    padding:15px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+
+}
+.collection img{
+    width:100%;
+
+}
+.collection h3{
+    color:var(--secondary-color);
+    font-weight:500;
+
+}
+.collection p{
+    color:var(--secondary-color);
+}
+.rating{
+    background-color: firebrick;
+    height: 3px;
+}
+/* collection section ends */
+
+/* main ends */
